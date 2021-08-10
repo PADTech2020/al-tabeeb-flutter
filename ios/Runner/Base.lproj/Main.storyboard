@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Flutter View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FlutterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="87" y="-23"/>
+        </scene>
+        <!--Video Chat View Controller-->
+        <scene sceneID="34K-kn-HTa">
+            <objects>
+                <viewController storyboardIdentifier="VideoChatViewController" id="TDf-9q-HFv" customClass="VideoChatViewController" customModule="Runner" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bs8-lG-9DU"/>
+                        <viewControllerLayoutGuide type="bottom" id="bzI-MI-ZiT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="j5i-DC-o5Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1n-ic-nBv">
+                                <rect key="frame" x="177" y="794" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="fnI-J4-onJ"/>
+                                    <constraint firstAttribute="width" constant="60" id="gNk-An-Bcq"/>
+                                </constraints>
+                                <state key="normal" image="call_off"/>
+                                <connections>
+                                    <action selector="didTapClose" destination="TDf-9q-HFv" eventType="touchUpInside" id="lVi-Kk-ndQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4Y-ZV-UIC">
+                                <rect key="frame" x="40" y="807" width="45" height="45"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="VI3-Gw-hNm"/>
+                                    <constraint firstAttribute="width" constant="45" id="aNy-Et-qYg"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="mute"/>
+                                <connections>
+                                    <action selector="muteFun" destination="TDf-9q-HFv" eventType="touchUpInside" id="ABC-IJ-TkR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="O4Y-ZV-UIC" firstAttribute="leading" secondItem="j5i-DC-o5Y" secondAttribute="leadingMargin" constant="20" id="J2c-Ox-skn"/>
+                            <constraint firstItem="bzI-MI-ZiT" firstAttribute="top" secondItem="O4Y-ZV-UIC" secondAttribute="bottom" constant="10" id="WjK-0A-xx3"/>
+                            <constraint firstItem="W1n-ic-nBv" firstAttribute="centerX" secondItem="j5i-DC-o5Y" secondAttribute="centerX" id="w0F-Fm-aUd"/>
+                            <constraint firstItem="bzI-MI-ZiT" firstAttribute="top" secondItem="W1n-ic-nBv" secondAttribute="bottom" constant="8" symbolic="YES" id="y8U-VP-JrQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tU6-y7-zQT" userLabel="iii"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="endCallBTN" destination="W1n-ic-nBv" id="zPy-lY-EcK"/>
+                        <outlet property="muteBTN" destination="O4Y-ZV-UIC" id="CRO-LF-hFs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zjU-eW-INL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1589.8550724637682" y="-22.098214285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jIJ-D4-vXE">
+            <objects>
+                <navigationController storyboardIdentifier="VideoChatNavigationViewController" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="mhL-gK-VnC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cSZ-OE-CkJ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="TDf-9q-HFv" kind="relationship" relationship="rootViewController" id="fxC-ZT-hbb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RBn-rW-h9c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="812" y="-23"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="call_off" width="512" height="512"/>
+        <image name="mute" width="240" height="240"/>
+    </resources>
+</document>

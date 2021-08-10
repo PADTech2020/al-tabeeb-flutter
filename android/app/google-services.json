@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "935566768212",
+    "firebase_url": "https://elajkom-ea818.firebaseio.com",
+    "project_id": "elajkom-ea818",
+    "storage_bucket": "elajkom-ea818.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935566768212:android:1d08a7d5826ca1293155c1",
+        "android_client_info": {
+          "package_name": "com.elajkom.mobileapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935566768212-0ue6e0lppm5tf3bbosbpegn5dn9gptjg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.elajkom.mobileapp",
+            "certificate_hash": "91ff3ff2f0134fe9af7f6fb5bb29a032e32e0806"
+          }
+        },
+        {
+          "client_id": "935566768212-0bvg4vdhjbolc5bo5gfu9igi9a8fqcqv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAGqWqzKcTovXhTb1zoVb9ZAbUQ5EWBU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "935566768212-0bvg4vdhjbolc5bo5gfu9igi9a8fqcqv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

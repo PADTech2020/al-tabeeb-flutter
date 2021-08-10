@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF000000"
+    tools:context=".VideoActivity">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="25dp"
+                android:padding="25px"
+                android:scaleType="centerInside"
+                android:src="@drawable/logo" />
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/subscriber_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/publisher_container"
+            android:layout_width="@dimen/publisher_width"
+            android:layout_height="@dimen/publisher_height"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="@dimen/publisher_right_margin"
+            android:layout_marginBottom="@dimen/publisher_bottom_margin"
+            android:background="@color/publisher_border_color"
+            android:padding="@dimen/publisher_padding"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnEndCall"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:paddingTop="20dp"
+            android:background="@drawable/round_button"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_margin="10dp"
+            android:drawablePadding="25dp"
+            android:drawableTop="@drawable/ic_round_call_end_24"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom|start"
+
+            >
+
+            <Button
+                android:id="@+id/btnVideo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_button2"
+                android:drawableTop="@drawable/ic_baseline_videocam_off_24"
+                android:drawablePadding="25dp"
+                android:paddingTop="15dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnAudio"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_button2"
+                android:drawableTop="@drawable/ic_baseline_volume_off_24"
+                android:drawablePadding="25dp"
+                android:paddingTop="15dp" />
+        </LinearLayout>
+
+
+
+        <!--        <Button-->
+        <!--            android:id="@+id/btnEndCall"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="bottom|center_horizontal"-->
+        <!--            android:layout_margin="10dp"-->
+        <!--            android:background="@drawable/bg_round_corner"-->
+        <!--            android:text="End call"-->
+        <!--            android:textColor="@android:color/white" />-->
+
+        <TextView
+            android:id="@+id/tvWaiting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/waiting"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+
+    </FrameLayout>
+
+</RelativeLayout>
